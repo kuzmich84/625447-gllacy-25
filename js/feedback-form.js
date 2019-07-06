@@ -1,15 +1,16 @@
-var feedBack = document.querySelector(".feedback-btn");
-var modal = document.querySelector(".modal-feedback");
-var close = document.querySelector(".close-modal-feedback");
-var yourName = modal.querySelector("[name=name]");
-var form = modal.querySelector(".feedback-form");
-var email = modal.querySelector("#feedbackEmail");
-var text = modal.querySelector("#message");
-var storageName = "";
-var storageEmail = "";
-var overlay = document.querySelector(".overlay")
+let feedBack = document.querySelector(".feedback-btn");
+let modal = document.querySelector(".modal-feedback");
+let close = document.querySelector(".close-modal-feedback");
+let yourName = modal.querySelector("[name=name]");
+let form = modal.querySelector(".feedback-form");
+let email = modal.querySelector("#feedbackEmail");
+let text = modal.querySelector("#message");
+let storageName = "";
+let storageEmail = "";
+let overlay = document.querySelector(".overlay");
 
-var isStorageSupport = true;
+
+let isStorageSupport = true;
 try {
   storageName = localStorage.getItem("yourName");
   storageEmail = localStorage.getItem("email");
@@ -39,6 +40,8 @@ close.addEventListener("click", function (evt) {
   evt.preventDefault();
   modal.classList.remove("modal-feedback-show");
   overlay.classList.remove("overlay-show");
+  modal.classList.remove("modal-error");
+
 
 });
 
@@ -47,7 +50,9 @@ window.addEventListener("keydown", function (evt) {
     if (modal.classList.contains("modal-feedback-show")) {
       evt.preventDefault();
       modal.classList.remove("modal-feedback-show");
-     overlay.classList.remove("overlay-show");
+      overlay.classList.remove("overlay-show");
+      modal.classList.remove("modal-error");
+
     }
   }
 });
@@ -55,7 +60,7 @@ window.addEventListener("keydown", function (evt) {
 form.addEventListener("submit", function (evt) {
   evt.preventDefault();
   if (!yourName.value || !email.value || !text.value) {
-    console.log('need fill');
+    modal.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("yourName", yourName.value);
