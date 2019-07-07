@@ -1,12 +1,12 @@
-let popup = document.querySelector(".user-link");
-let login = document.querySelector("[name=email]");
-let password = document.querySelector("[name=password]");
-let formLogin = document.querySelector(".login-form");
-let modalLogin = document.querySelector(".modal-login")
-let storageLogin = "";
-let storagePassword = "";
+var popup = document.querySelector(".user-link");
+var login = document.querySelector("[name=email]");
+var password = document.querySelector("[name=password]");
+var formLogin = document.querySelector(".login-form");
+var modalLogin = document.querySelector(".modal-login")
+var storageLogin = "";
+var storagePassword = "";
 
-let isStorageLogin= true;
+var isStorageLogin= true;
 try {
   storageLogin = localStorage.getItem("login");
 

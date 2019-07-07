@@ -16,10 +16,9 @@
 <div class="site-wrapper">
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html"><img src="img/svg/logo.svg" width="154" height="64"
-                                                         alt="Логотип"></a>
+   <img class="main-header-logo" src="img/svg/logo.svg" width="154" height="64" alt="Gllacy Shop">
       <ul class="site-navigation">
-        <li class="navigation-item"><a href="#"><span class="main-navigation-underline">Каталог</span></a>
+        <li class="navigation-item" id="submenu"><a href="#"><span class="main-navigation-underline">Каталог</span></a>
           <ul class="site-navigation-submenu">
             <li><p>Новинки</p></li>
             <li><a href="catalog.html">Сливочное</a></li>
@@ -33,7 +32,7 @@
         <li class="navigation-item"><a href="#"><span class="main-navigation-underline">О Компании</span></a></li>
       </ul>
       <ul class="user-navigation">
-        <li class="user-search" tabindex="0"><a href="#">
+        <li class="user-search" tabindex="0" id="user_search"><a href="#">
           <svg class="icon-loupe" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
             <path fill="#fff"
                   d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"></path>
@@ -42,11 +41,11 @@
           <div class="modal modal-search">
             <h2 class="visually-hidden">Поиск по сайту</h2>
             <form tabindex="0" class="search-form" action="#" method="get">
-              <input type="text" placeholder="Что ищем?">
+              <input id="search" class="search-input" type="text" placeholder="Что ищем?">
             </form>
           </div>
         </li>
-        <li class="user-link" tabindex="0"><a href="#">Вход
+        <li class="user-link" tabindex="0" id="user_link"><a href="#">Вход
           <svg class="icon-enter" xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19">
             <g fill="#fff">
               <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"></path>
@@ -131,7 +130,7 @@
     <section class="product">
       <h2 class="visually-hidden">Каталог мороженого</h2>
       <ul class="product-list">
-        <li class="product-item hit">
+        <li class="product-item hit" id="product-item-1">
           <img src="img/content/1_1.jpg" width="267" height="267" alt="Мороженое апельсиновое">
           <div class="wrapper-price">
             <span class="product-price">310</span>
@@ -141,7 +140,7 @@
             class="navigation-underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a>
           <button class="btn product-btn" type="button">Быстрый просмотр</button>
         </li>
-        <li class="product-item hit">
+        <li class="product-item hit" id="product-item-2">
           <img src="img/content/1_2.jpg" width="267" height="267" alt="Мороженое кофейное">
           <div class="wrapper-price">
             <span class="product-price">380</span>
@@ -150,7 +149,7 @@
           <a href="#"><span class="navigation-underline">Сливочно-кофейное с кусочками шоколада</span></a>
           <button class="btn product-btn" type="button">Быстрый просмотр</button>
         </li>
-        <li class="product-item hit">
+        <li class="product-item hit" id="product-item-3">
           <img src="img/content/1_3.jpg" width="267" height="267" alt="Мороженое кофейное">
           <div class="wrapper-price">
             <span class="product-price">355</span>
@@ -159,7 +158,7 @@
           <a href="#"><span class="navigation-underline">Сливочно-клубничное с присыпкой из белого шоколада</span></a>
           <button class="btn product-btn" type="button">Быстрый просмотр</button>
         </li>
-        <li class="product-item hit">
+        <li class="product-item hit" id="product-item-4">
           <img src="img/content/1_4.jpg" width="267" height="267" alt="Мороженое клубничное">
           <div class="wrapper-price">
             <span class="product-price">415</span>
@@ -278,9 +277,9 @@
       </ul>
     </div>
     <div class="logo-creator">
-      <a href="https://htmlacademy.ru"><img src="img/svg/logo-htmlacademy.svg" width="107" height="38"
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg/logo-htmlacademy.svg" width="107" height="38"
                                             alt="https://htmlacademy.ru/"></a>
-      <p>Сделано в HTML Academy © 2019</p>
+      <p>Сделано в <a class="link-author" href="https://htmlacademy.ru/intensive/htmlcss"><span class="navigation-underline">HTML Academy</span></a> © 2019</p>
     </div>
   </footer>
   <div class="overlay"></div>
@@ -302,5 +301,6 @@
 <script src="js/map.js"></script>
 <script src="js/login.js"></script>
 <script src="js/sent.js"></script>
+
 </body>
 </html>
