@@ -48,13 +48,12 @@ a {
   margin: 0 auto;
 }
 
-
 .catalog-content {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 28px;
 }
 
-.main-header-logo{
+.main-header-logo {
   margin-top: 9px;
 }
 
@@ -327,7 +326,7 @@ a {
   display: block;
 }
 
-#submenu:hover .site-navigation-submenu{
+#submenu:hover .site-navigation-submenu {
   display: block;
 }
 
@@ -446,22 +445,22 @@ a {
 @-webkit-keyframes drop {
   0% {
     -webkit-transform: translateY(-1000px);
-    -moz-transform:  translateY(-1000px);
-    -ms-transform:  translateY(-1000px);
+    -moz-transform: translateY(-1000px);
+    -ms-transform: translateY(-1000px);
     -o-transform: translateY(-1000px);
     transform: translateY(-1000px);
   }
   70% {
     -webkit-transform: translateY(30px);
-    -moz-transform:  translateY(30px);
-    -ms-transform:  translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
     -o-transform: translateY(30px);
     transform: translateY(30px);
   }
   90% {
     -webkit-transform: translateY(-10px);
-    -moz-transform:  translateY(-10px);
-    -ms-transform:  translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
     -o-transform: translateY(-10px);
     transform: translateY(-10px);
   }
@@ -472,22 +471,22 @@ a {
 @keyframes drop {
   0% {
     -webkit-transform: translateY(-1000px);
-    -moz-transform:  translateY(-1000px);
-    -ms-transform:  translateY(-1000px);
+    -moz-transform: translateY(-1000px);
+    -ms-transform: translateY(-1000px);
     -o-transform: translateY(-1000px);
     transform: translateY(-1000px);
   }
   70% {
     -webkit-transform: translateY(30px);
-    -moz-transform:  translateY(30px);
-    -ms-transform:  translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
     -o-transform: translateY(30px);
     transform: translateY(30px);
   }
   90% {
     -webkit-transform: translateY(-10px);
-    -moz-transform:  translateY(-10px);
-    -ms-transform:  translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
     -o-transform: translateY(-10px);
     transform: translateY(-10px);
   }
@@ -618,7 +617,7 @@ a {
 }
 
 #user_search:hover .modal,
-#user_link:hover .modal{
+#user_link:hover .modal {
   display: block;
   z-index: 50;
 
@@ -659,12 +658,10 @@ a {
   color: #323232;
 }
 
-
-
 .search-form input::-webkit-input-placeholder,
 .login-form input::-webkit-input-placeholder,
 .feedback-form input::-webkit-input-placeholder,
-.feedback-form textarea::-webkit-input-placeholder{
+.feedback-form textarea::-webkit-input-placeholder {
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
@@ -681,7 +678,7 @@ a {
 #feedbackEmail:-ms-input-placeholder,
 #search:-ms-input-placeholder,
 #email:-ms-input-placeholder,
-#password:-ms-input-placeholder{
+#password:-ms-input-placeholder {
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
@@ -694,9 +691,6 @@ a {
   padding: 7px 15px 14px 15px;
 
 }
-
-
-
 
 .wrapper-login-btn {
   display: -webkit-box;
@@ -1309,8 +1303,6 @@ a {
   z-index: 10;
 }
 
-
-
 .product-item:hover > .product-btn,
 .product-item:focus-within > .product-btn {
   display: block;
@@ -1332,7 +1324,6 @@ a {
   z-index: 2;
 }
 
-
 #product-item-1_1:hover > .product-btn,
 #product-item-1_2:hover > .product-btn,
 #product-item-1_3:hover > .product-btn,
@@ -1344,11 +1335,10 @@ a {
 #product-item-3_1:hover > .product-btn,
 #product-item-3_2:hover > .product-btn,
 #product-item-3_3:hover > .product-btn,
-#product-item-3_4:hover > .product-btn{
+#product-item-3_4:hover > .product-btn {
   display: block;
   z-index: 2;
 }
-
 
 #product-item-1_1:hover,
 #product-item-1_2:hover,
@@ -1361,7 +1351,7 @@ a {
 #product-item-3_1:hover,
 #product-item-3_2:hover,
 #product-item-3_3:hover,
-#product-item-3_4:hover{
+#product-item-3_4:hover {
   z-index: 10;
 }
 
@@ -1382,7 +1372,7 @@ a {
   -ms-grid-row-align: center;
   border: none;
   display: none;
-  margin:22px 33px 22px 33px;
+  margin: 22px 33px 22px 33px;
   cursor: pointer;
 }
 
@@ -1591,9 +1581,6 @@ a {
   color: #999999;
   padding: 7px 15px 11px 15px;
 }
-
-
-
 
 .subscription-input::-webkit-input-placeholder {
   font-family: 'Roboto', Arial, sans-serif;
@@ -2507,31 +2494,35 @@ input[type=submit]:focus {
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .subscription-input{
-    padding: 7px 15px 11px 15px;
-  }
-  .modal-login input{
-    padding: 8px 15px 12px 15px;
-  }
-  .modal-search input{
+  .subscription-input {
     padding: 7px 15px 11px 15px;
   }
 
-  .modal-feedback input{
+  .modal-login input {
     padding: 8px 15px 12px 15px;
   }
 
-  .modal-feedback input:focus, .modal-search input:focus, .modal-login input:focus, .subscription-input:focus{
+  .modal-search input {
+    padding: 7px 15px 11px 15px;
+  }
+
+  .modal-feedback input {
+    padding: 8px 15px 12px 15px;
+  }
+
+  .modal-feedback input:focus, .modal-search input:focus, .modal-login input:focus, .subscription-input:focus {
     padding: 6px 15px 10px 15px;
   }
-  .modal-feedback input:hover, .modal-search input:hover, .modal-login input:hover, .subscription-input:hover{
+
+  .modal-feedback input:hover, .modal-search input:hover, .modal-login input:hover, .subscription-input:hover {
     padding: 6px 15px 10px 15px;
   }
 
   .container-radio,
-  .container-checkbox{
+  .container-checkbox {
     height: 36px;
   }
+
   .check-input-radio:checked + * span::before {
     content: "";
     background-color: rgba(255, 255, 255, 0.8);
@@ -2542,12 +2533,13 @@ input[type=submit]:focus {
     top: 4px;
     left: 4px;
   }
+
   .check-input-radio:checked:hover + * span::before,
   .check-input-radio:checked:focus + * span::before {
     background-color: rgba(255, 255, 255, 1);
   }
 
-  .search-form input{
+  .search-form input {
     margin: 22px 15px 20px 15px;
   }
 
@@ -2560,7 +2552,7 @@ input[type=submit]:focus {
   }
 }
 
-.link-author{
+.link-author {
   font-size: 13px;
   font-weight: normal;
   font-style: normal;
@@ -2572,10 +2564,8 @@ input[type=submit]:focus {
 }
 
 .link-author:hover,
-.link-author:active{
+.link-author:active {
   color: #ffbc9e;
-
-
 }
 
 

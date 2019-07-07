@@ -8,16 +8,14 @@ var text = modal.querySelector("#message");
 var storageName = "";
 var storageEmail = "";
 var overlay = document.querySelector(".overlay");
-
-
 var isStorageSupport = true;
+
 try {
   storageName = localStorage.getItem("yourName");
   storageEmail = localStorage.getItem("email");
 } catch (err) {
   isStorageSupport = false;
 }
-
 
 feedBack.addEventListener("click", function (evt) {
   evt.preventDefault();
