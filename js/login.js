@@ -1,12 +1,13 @@
-var popup = document.querySelector(".user-link");
-var login = document.querySelector("[name=email]");
-var password = document.querySelector("[name=password]");
-var formLogin = document.querySelector(".login-form");
-var modalLogin = document.querySelector(".modal-login")
-var storageLogin = "";
-var storagePassword = "";
+let popup = document.querySelector(".user-link");
+let login = document.querySelector("[name=email]");
+let password = document.querySelector("[name=password]");
+let formLogin = document.querySelector(".login-form");
+let modalLogin = document.querySelector(".modal-login");
+let storageLogin = "";
+let storagePassword = "";
+let btnLogin = document.querySelector(".login-btn");
 
-var isStorageLogin= true;
+let isStorageLogin = true;
 try {
   storageLogin = localStorage.getItem("login");
 
@@ -23,8 +24,8 @@ popup.addEventListener("mouseover", function (evt) {
     if (storagePassword) {
       password.value = storagePassword;
       login.focus();
-      }
-  } else{
+    }
+  } else {
     login.focus();
   }
 });
@@ -34,13 +35,19 @@ popup.addEventListener("mouseout", function (evt) {
 
 });
 
+
+btnLogin.addEventListener("mouseup", function (evt) {
+  evt.preventDefault();
+  modalLogin.classList.remove("modal-error");
+})
+
 formLogin.addEventListener("submit", function (evt) {
   evt.preventDefault();
   if (!login.value || !password.value) {
     modalLogin.classList.add("modal-error");
-    } else {
+  } else {
     if (isStorageLogin) {
       localStorage.setItem("login", login.value);
-      }
+    }
   }
 });
